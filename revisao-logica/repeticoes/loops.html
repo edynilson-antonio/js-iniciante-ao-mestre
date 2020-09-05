@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let numero = prompt("Digite um número");
+        document.write(`<h1>Tabuada de ${numero} <br></h1><hr>`);
+
+        let indice = 0;
+        while (indice <= 10) {
+            indice++;
+            if (indice === 5) {
+                continue
+            }
+            document.write(`${numero} x ${indice} = ` + (numero * indice) + "<br>");
+        }
+
+        // document.write(`<hr>`);
+
+        for (let i = 0; i <= numero; i++) {
+            if (i === 5) {
+                continue;
+            }
+
+            document.write(`${numero} x ${i} = ` + numero * i + "<br>");
+        }
+
+
+        indice = 0;
+        // do while é executado pelo menos uma vez
+        do {
+            if (indice > 10) {
+                alert("indice maior que 10");
+                break;
+            }
+
+            document.write(`${numero} x ${indice} = ` + (numero * indice) + "<br>");
+            indice++;
+        } while (indice <= 10);
+    </script>
+
+</body>
+
+</html>
