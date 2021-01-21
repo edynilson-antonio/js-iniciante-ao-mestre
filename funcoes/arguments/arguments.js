@@ -1,3 +1,17 @@
+// Somando itens do array
+
+function somar(arr) {
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+        total += arr[i];
+    }
+    return total;
+}
+
+console.log(somar([3, 7, 9]));
+
+// Function Declaration
+
 function somar() {
     console.log(arguments);
     let total = 0;
